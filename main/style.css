@@ -1,4 +1,62 @@
-h1 {
-  color: #ff0000;
-  margin: 0 auto;
-  width: 316px; }
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets//font/Metropolis-Regular.otf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: Metropolis;
+  src: url(../assets/font/Metropolis-Bold.otf);
+  font-weight: bold; }
+
+.horizontal-align {
+  margin-left: auto;
+  margin-right: auto; }
+
+.wrapper {
+  max-width: 1152px;
+  padding: 0 20px; }
+
+.inline-block {
+  display: inline-block; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.header__nav {
+  padding-top: 56px;
+  display: flex; }
+
+.logo__size {
+  width: 176px;
+  height: 49px; }
+
+.header__nav-holder {
+  margin-left: auto; }
+
+.header__nav-item {
+  font-size: 18px;
+  color: #434343;
+  line-height: 18px; }
+  .header__nav-item--active {
+    background-color: #7f83ff;
+    color: #ffffff;
+    padding: 12px 20px 12px 22px;
+    border-radius: 20px;
+    margin-left: 53px; }
+
+.hero {
+  background-image: url(../assets/img/hero.png);
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .hero__content {
+    max-width: 798px;
+    text-align: center; }
+  .hero__desc {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 40px; }
