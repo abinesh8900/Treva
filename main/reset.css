@@ -131,5 +131,11 @@ a {
 }
 h1 {
   font-size: 45px;
+}
+h3 {
+  font-size: 40px;
+}
+h1,
+h3 {
   font-weight: bold;
 }

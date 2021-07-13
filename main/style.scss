@@ -29,20 +29,23 @@
 }
 // ******----styling-----*******//
 .top__header {
-  // position: fixed;
-  // width: 100%;
-  // top: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  background-color: $secondary-text-color;
 }
 .header__nav {
-  padding-top: 56px;
-  display: flex;
+  padding: 25px 20px;
+  display: flex; //flex
 }
 .logo__size {
   width: 176px;
   height: 49px;
 }
 .header__nav-holder {
-  margin-left: auto;
+  margin-top: 4px;
+  margin-left: auto; // flex
 }
 .header__nav-item {
   font-size: map-get($font-size, fs-18);
@@ -61,7 +64,7 @@
 }
 .hero {
   background-image: url(../assets/img/hero.png);
-  height: 100vh;
+  height: 130vh;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -69,11 +72,79 @@
   &__content {
     max-width: 798px;
     text-align: center;
+    transform: translateY(50%);
   }
   &__desc {
     margin-top: 30px;
     font-size: map-get($font-size, fs-26);
     line-height: map-get($line-height, lh-40);
-    // line-height: $lh-40;
   }
+  &__btn-holder {
+    margin-top: 30px;
+  }
+  &__btn {
+    font-size: map-get($font-size, fs-25);
+    line-height: map-get($line-height, lh-25);
+    padding: 15px 0;
+    width: 151px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  &__btn-bgcolor {
+    background-color: $hero-btn;
+    color: $secondary-text-color;
+    margin-right: 32px;
+  }
+
+  &__btn-border {
+    border: 2px solid $hero-btn;
+    color: $hero-btn;
+  }
+}
+.hire-warp {
+  padding: 179px 0 130px 0;
+}
+.warp__header {
+  max-width: 694px;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 179px;
+}
+.warp__nav {
+  margin-top: 46px;
+}
+.warp__nav-item {
+  font-size: 22px;
+  border-bottom: 3px solid $warp-border;
+  width: calc(100% / 3);
+  padding: 33px 0;
+}
+.nav-item__circle {
+  height: 47px;
+  width: 47px;
+  border-radius: 50px;
+
+  &-icon {
+    padding: 14px;
+  }
+}
+.nav-item__text {
+  font-size: map-get($font-size, fs-22);
+  line-height: map-get($line-height, lh-25);
+  margin: 23px;
+}
+.nav-item__circle-blue {
+  background-color: $light-blue;
+}
+.nav-item__text-blue {
+  color: $light-blue;
+}
+.nav-item__circle-red {
+  background-color: $circle-red;
+}
+.nav-item__circle-green {
+  background-color: $circle-green;
+}
+.warp__nav-item-blue {
+  border-bottom-color: $light-blue;
 }
