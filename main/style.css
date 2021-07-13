@@ -16,6 +16,10 @@
   max-width: 1152px;
   padding: 0 20px; }
 
+.container {
+  max-width: 1200px;
+  padding: 0 20px; }
+
 .inline-block {
   display: inline-block; }
 
@@ -114,7 +118,8 @@
 .nav-item__text {
   font-size: 22px;
   line-height: 25px;
-  margin: 23px; }
+  margin: 23px;
+  color: #2f2d2d; }
 
 .nav-item__circle-blue {
   background-color: #7796fe; }
@@ -130,3 +135,50 @@
 
 .warp__nav-item-blue {
   border-bottom-color: #7796fe; }
+
+.hire__bg-right {
+  background-image: url(../assets/img/Group145.png);
+  height: 608px;
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.hire__card-left {
+  margin-top: 40px;
+  clip-path: polygon(0 0, 100% 0, 96% 80%, 0 100%);
+  background-color: #7796fe;
+  width: 752px;
+  border-radius: 20px; }
+
+.hire__card-left-content {
+  width: 564px;
+  padding: 49px 0 98px 56px;
+  color: #ffffff; }
+
+.hire__card-left-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 31px; }
+
+.hire__bg-left {
+  margin-top: 144px;
+  background-image: url(../assets/img/Group172.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 768px; }
+
+.hire__card-right {
+  margin-top: 80px;
+  clip-path: polygon(13% 18%, 100% 0, 100% 100%, 0 100%);
+  background-color: #ff865b;
+  width: 709px;
+  border-radius: 20px; }
+
+.hire__card-right-content {
+  width: 591px;
+  padding: 153px 0 87px 122px;
+  color: #ffffff; }
+
+.hire__card-right-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 31px; }
