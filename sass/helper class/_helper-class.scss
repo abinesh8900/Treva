@@ -1,0 +1,26 @@
+.horizontal-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper {
+  max-width: 1152px;
+  padding: 0 20px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.inline-block {
+  display: inline-block;
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}

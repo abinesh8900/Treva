@@ -1,0 +1,45 @@
+.footer {
+  height: 100vh;
+  background-image: url(../assets/img/Group420.png);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+
+  &__area {
+    display: flex;
+  }
+  &__logo {
+    flex-basis: 325px;
+  }
+
+  &__nav-holder {
+    flex-basis: 200px;
+  }
+  &__nav-heading {
+    font-size: map-get($font-size, fs-25);
+    line-height: map-get($line-height, lh-30);
+    margin-bottom: 35px;
+    color: $primary-text-color;
+  }
+  &__nav-item {
+    font-size: map-get($font-size, fs-18);
+    line-height: map-get($line-height, lh-35);
+
+    &-link {
+      color: $footer-link;
+    }
+  }
+}
+.footer__nav-social-facebook {
+  color: $facebook-blue;
+  margin-right: 17px;
+}
+
+.footer__nav-social-twitter {
+  color: $twitter-blue;
+  margin-right: 10px;
+}
+
+.footer__nav-social-instagram {
+  color: $instagram-pink;
+  margin-right: 14px;
+}
