@@ -147,12 +147,12 @@ hr {
 
 @font-face {
   font-family: Metropolis;
-  src: url(../assets//font/Metropolis-Regular.otf);
+  src: url(assets//font/Metropolis-Regular.otf);
   font-weight: 400; }
 
 @font-face {
   font-family: Metropolis;
-  src: url(../assets/font/Metropolis-Bold.otf);
+  src: url(assets/font/Metropolis-Bold.otf);
   font-weight: bold; }
 
 .horizontal-align {
@@ -183,7 +183,7 @@ hr {
 
 .footer {
   height: 100vh;
-  background-image: url(../assets/img/Group420.png);
+  background-image: url(assets/img/Group420.png);
   background-repeat: repeat-x;
   background-position: bottom left; }
   .footer__area {
@@ -328,7 +328,7 @@ hr {
   border-bottom-color: #7796fe; }
 
 .hire__bg-right {
-  background-image: url(../assets/img/Group145.png);
+  background-image: url(assets/img/Group145.png);
   height: 608px;
   background-repeat: no-repeat;
   background-position: right; }
@@ -351,7 +351,7 @@ hr {
 
 .hire__bg-left {
   margin-top: 144px;
-  background-image: url(../assets/img/Group172.png);
+  background-image: url(assets/img/Group172.png);
   background-repeat: no-repeat;
   background-position: left;
   height: 768px; }
@@ -392,7 +392,7 @@ hr {
   border-bottom-color: #fb1488; }
 
 .work__bg-right {
-  background-image: url(../assets/img/Group163.png);
+  background-image: url(assets/img/Group163.png);
   height: 621px;
   background-repeat: no-repeat;
   background-position: right; }
@@ -410,7 +410,7 @@ hr {
 
 .work__bg-left {
   margin-top: 200px;
-  background-image: url(../assets/img/Group247.png);
+  background-image: url(assets/img/Group247.png);
   background-repeat: no-repeat;
   background-position: left;
   height: 802px; }
