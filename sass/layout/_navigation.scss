@@ -7,13 +7,21 @@
 }
 .header__nav {
   padding: 25px 20px;
+  align-items: center;
+  @include breakpoint(small-screen) {
+    padding: 15px;
+  }
 }
 .logo__size {
   width: 176px;
   height: 49px;
+
+  @include breakpoint(small-screen) {
+    width: 100px;
+    height: 28px;
+  }
 }
 .header__nav-holder {
-  margin-top: 4px;
   margin-left: auto; // flex
 }
 .header__nav-item {
@@ -21,11 +29,20 @@
   color: $header-nav-text;
   line-height: map-get($line-height, lh-18);
 
+  @include breakpoint(small-screen) {
+    font-size: font-size(fs-16);
+  }
+
   &--active {
     background-color: $header-nav-btn;
     color: $secondary-text-color;
     padding: 12px 20px 12px 22px;
     border-radius: 20px;
     margin-left: 53px;
+
+    @include breakpoint(small-screen) {
+      margin-left: 20px;
+      padding: 10px 15px;
+    }
   }
 }

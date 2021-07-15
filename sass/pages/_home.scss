@@ -1,16 +1,28 @@
 .hire-warp {
-  margin: 179px 0 130px 0;
+  padding: 179px 0 130px 0;
+
+  @include breakpoint(small-screen) {
+    padding: 80px 0 80px 0;
+  }
 }
 .warp__header {
   max-width: 694px;
   text-align: center;
   margin-bottom: 179px;
+
+  @include breakpoint(small-screen) {
+    margin-bottom: 80px;
+  }
 }
 .warp__heading {
   color: $primary-text-color;
 }
 .warp__nav {
   margin-top: 46px;
+
+  @include breakpoint(small-screen) {
+    margin-top: 30px;
+  }
 }
 .warp__nav-item {
   font-size: 22px;
@@ -23,14 +35,26 @@
   @include breakpoint(medium-small-screen) {
     flex-flow: column;
   }
+  @include breakpoint(small-screen) {
+    padding: 0 0 15px 0;
+  }
 }
 .nav-item__circle {
   height: 47px;
   width: 47px;
   border-radius: 50px;
 
+  @include breakpoint(small-screen) {
+    height: 42px;
+    width: 42px;
+  }
+
   &-icon {
     padding: 14px;
+
+    @include breakpoint(small-screen) {
+      padding: 12px;
+    }
   }
 }
 .nav-item__text {
@@ -40,7 +64,11 @@
   color: $primary-text-color;
 
   @include breakpoint(medium-small-screen) {
-    margin: 23px 0 0 0;
+    margin: 18px 0 0 0;
+  }
+  @include breakpoint(small-screen) {
+    margin: 10px 0 0 0;
+    font-size: font-size(fs-18);
   }
 }
 .nav-item__circle-blue {
@@ -70,6 +98,10 @@
   @include breakpoint(medium-small-screen) {
     background-size: 523px;
   }
+  @include breakpoint(small-screen) {
+    height: 520px;
+    background-size: 310px;
+  }
 }
 // .hire__card-left-blur {
 //   filter: filter(blue-fliter);
@@ -91,6 +123,10 @@
     height: unset;
     padding: 50px;
   }
+
+  @include breakpoint(small-screen) {
+    padding: 25px;
+  }
 }
 .hire__card-left-content {
   max-width: 564px;
@@ -100,11 +136,26 @@
     max-width: 100%;
   }
 }
+.card-heading {
+  @include breakpoint(medium-small-screen) {
+    line-height: line-height(lh-35);
+  }
 
+  @include breakpoint(small-screen) {
+    font-size: font-size(fs-22);
+    line-height: line-height(lh-30);
+  }
+}
 .card-desc {
   margin-top: 20px;
   font-size: font-size(fs-18);
-  line-height: map-get($line-height, lh-31);
+  line-height: line-height(lh-31);
+
+  @include breakpoint(small-screen) {
+    font-size: font-size(fs-16);
+    line-height: line-height(lh-22);
+    margin-top: 15px;
+  }
 }
 .hire__bg-left {
   margin-top: 144px;
@@ -121,6 +172,10 @@
   @include breakpoint(medium-small-screen) {
     background-size: 500px;
     height: 1120px;
+  }
+  @include breakpoint(small-screen) {
+    background-size: 300px;
+    height: 800px;
   }
 }
 .hire__card-right {
@@ -141,6 +196,11 @@
     height: unset;
     border-radius: 20px;
   }
+
+  @include breakpoint(small-screen) {
+    margin-top: 60px;
+    padding: 25px;
+  }
 }
 .hire__card-right-content {
   max-width: 539px;
@@ -160,6 +220,10 @@
 
   @include breakpoint(medium-largre-screen) {
     margin-bottom: 180px;
+  }
+
+  @include breakpoint(small-screen) {
+    margin-bottom: 80px;
   }
 }
 
@@ -191,6 +255,10 @@
     height: 800px;
     background-size: 450px;
   }
+  @include breakpoint(small-screen) {
+    height: 600px;
+    background-size: 320px;
+  }
 }
 .work__card-left {
   clip-path: path(
@@ -208,6 +276,10 @@
     width: 100%;
     height: unset;
     border-radius: 20px;
+  }
+
+  @include breakpoint(small-screen) {
+    padding: 25px;
   }
 }
 .work__card-left-content {
@@ -234,6 +306,11 @@
     height: 1200px;
     background-size: 500px;
   }
+
+  @include breakpoint(small-screen) {
+    height: 885px;
+    background-size: 300px;
+  }
 }
 .work__card-right {
   margin-top: 80px;
@@ -251,6 +328,10 @@
     width: 100%;
     height: unset;
     border-radius: 20px;
+  }
+
+  @include breakpoint(small-screen) {
+    padding: 25px;
   }
 }
 .work__card-right-content {

@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  @include breakpoint(small-screen) {
+    height: 100vh;
+  }
+
   &__content {
     max-width: 798px;
     text-align: center;
@@ -16,23 +20,42 @@
     @include breakpoint(medium-small-screen) {
       width: 85%;
     }
+    @include breakpoint(small-screen) {
+      transform: translateY(32%);
+    }
   }
   &__heading {
     color: $primary-text-color;
+
+    @include breakpoint(small-screen) {
+      font-size: font-size(fs-30);
+      line-height: line-height(lh-40);
+    }
   }
   &__desc {
     @include desc();
   }
   &__btn-holder {
     margin-top: 30px;
+
+    @include breakpoint(small-screen) {
+      margin-top: 25px;
+    }
   }
   &__btn {
     font-size: font-size(fs-25);
-    line-height: map-get($line-height, lh-25);
+    line-height: line-height(lh-25);
     padding: 15px 0;
     width: 151px;
     text-align: center;
     border-radius: 8px;
+
+    @include breakpoint(small-screen) {
+      font-size: font-size(fs-18);
+      line-height: line-height(lh-20);
+      padding: 12px 0;
+      width: 110px;
+    }
   }
   &__btn-bgcolor {
     background-color: $hero-btn;
