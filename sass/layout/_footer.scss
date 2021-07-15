@@ -3,9 +3,10 @@
   background-image: url(assets/img/footerbg.png);
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: contain;
 
   @include breakpoint(footer-container) {
-    height: 700px;
+    height: 500px;
   }
 
   &__container {

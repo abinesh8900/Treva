@@ -12,8 +12,16 @@
     @media screen and (max-width: 1006px) {
       @content;
     }
-  } @else if $point == medium-screen {
+  } @else if $point == medium-largre-screen {
     @media screen and (max-width: 1100px) {
+      @content;
+    }
+  } @else if $point == medium-small-screen {
+    @media screen and (max-width: 780px) {
+      @content;
+    }
+  } @else if $point == small-screen {
+    @media screen and (max-width: 500px) {
       @content;
     }
   }

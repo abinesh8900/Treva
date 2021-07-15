@@ -4,7 +4,6 @@
 .warp__header {
   max-width: 694px;
   text-align: center;
-  font-size: font-size(fs-0);
   margin-bottom: 179px;
 }
 .warp__heading {
@@ -18,6 +17,12 @@
   border-bottom: 3px solid $warp-border;
   width: calc(100% / 3);
   padding: 33px 0;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(medium-small-screen) {
+    flex-flow: column;
+  }
 }
 .nav-item__circle {
   height: 47px;
@@ -31,8 +36,12 @@
 .nav-item__text {
   font-size: font-size(fs-22);
   line-height: map-get($line-height, lh-25);
-  margin: 23px;
+  margin: 0 0 0 23px;
   color: $primary-text-color;
+
+  @include breakpoint(medium-small-screen) {
+    margin: 23px 0 0 0;
+  }
 }
 .nav-item__circle-blue {
   background-color: $light-blue;
@@ -55,8 +64,11 @@
   background-repeat: no-repeat;
   background-position: bottom right;
 
-  @include breakpoint(medium-screen) {
+  @include breakpoint(medium-largre-screen) {
     height: 800px;
+  }
+  @include breakpoint(medium-small-screen) {
+    background-size: 523px;
   }
 }
 // .hire__card-left-blur {
@@ -70,10 +82,23 @@
   padding: 49px 0 98px 56px;
   width: 750px;
   height: 356px;
+
+  @include breakpoint(medium-small-screen) {
+    clip-path: unset;
+    width: 100%;
+    border-radius: 20px;
+    // background-color: rgba(119, 150, 254, 0.5);
+    height: unset;
+    padding: 50px;
+  }
 }
 .hire__card-left-content {
   max-width: 564px;
   color: $secondary-text-color;
+
+  @include breakpoint(medium-small-screen) {
+    max-width: 100%;
+  }
 }
 
 .card-desc {
@@ -88,9 +113,14 @@
   background-position: bottom left;
   height: 768px;
 
-  @include breakpoint(medium-screen) {
+  @include breakpoint(medium-largre-screen) {
     margin-top: unset;
     height: 1200px;
+  }
+
+  @include breakpoint(medium-small-screen) {
+    background-size: 500px;
+    height: 1120px;
   }
 }
 .hire__card-right {
@@ -102,10 +132,23 @@
   padding: 153px 0 87px 122px;
   width: 709px;
   height: 523px;
+
+  @include breakpoint(medium-small-screen) {
+    clip-path: unset;
+    // background-color: rgba(255, 134, 91, 0.5);
+    padding: 50px;
+    width: 100%;
+    height: unset;
+    border-radius: 20px;
+  }
 }
 .hire__card-right-content {
-  width: 539px;
+  max-width: 539px;
   color: $secondary-text-color;
+
+  @include breakpoint(medium-small-screen) {
+    max-width: 100%;
+  }
 }
 .hire__card-right-desc {
   margin-top: 20px;
@@ -115,7 +158,7 @@
 .work-warp {
   margin-bottom: 287px;
 
-  @include breakpoint(medium-screen) {
+  @include breakpoint(medium-largre-screen) {
     margin-bottom: 180px;
   }
 }
@@ -141,8 +184,12 @@
   background-repeat: no-repeat;
   background-position: bottom right;
 
-  @include breakpoint(medium-screen) {
+  @include breakpoint(medium-largre-screen) {
     height: 870px;
+  }
+  @include breakpoint(medium-small-screen) {
+    height: 800px;
+    background-size: 450px;
   }
 }
 .work__card-left {
@@ -153,11 +200,23 @@
   padding: 99px 0 80px 79px;
   width: 706px;
   height: 446px;
+
+  @include breakpoint(medium-small-screen) {
+    clip-path: unset;
+    // background-color: rgba(137, 55, 220, 0.5);
+    padding: 50px;
+    width: 100%;
+    height: unset;
+    border-radius: 20px;
+  }
 }
 .work__card-left-content {
   max-width: 490px;
   color: $secondary-text-color;
-  // filter: blur(62.5205px);
+
+  @include breakpoint(medium-small-screen) {
+    max-width: 100%;
+  }
 }
 .work__bg-left {
   margin-top: 200px;
@@ -166,9 +225,14 @@
   background-position: bottom left;
   height: 802px;
 
-  @include breakpoint(medium-screen) {
+  @include breakpoint(medium-largre-screen) {
     height: 1200px;
     margin-top: unset;
+  }
+
+  @include breakpoint(medium-small-screen) {
+    height: 1200px;
+    background-size: 500px;
   }
 }
 .work__card-right {
@@ -180,11 +244,22 @@
   padding: 148px 0px 147px 132px;
   width: 709px;
   height: 594px;
+
+  @include breakpoint(medium-small-screen) {
+    clip-path: unset;
+    padding: 50px;
+    width: 100%;
+    height: unset;
+    border-radius: 20px;
+  }
 }
 .work__card-right-content {
-  width: 469px;
-
+  max-width: 469px;
   color: $secondary-text-color;
+
+  @include breakpoint(medium-small-screen) {
+    max-width: 100%;
+  }
 }
 .input-area {
   text-align: center;
@@ -227,7 +302,7 @@
 
   &-icon {
     margin-left: 26px;
-    @include breakpoint(medium-screen) {
+    @include breakpoint(medium-largre-screen) {
       margin-left: unset;
     }
   }
