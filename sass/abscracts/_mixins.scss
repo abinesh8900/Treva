@@ -1,0 +1,20 @@
+@mixin desc() {
+  margin-top: 30px;
+  color: $primary-text-color;
+  font-size: font-size(fs-26);
+  line-height: map-get($line-height, lh-40);
+}
+
+// BREAK POINTS
+
+@mixin breakpoint($point) {
+  @if $point == footer-container {
+    @media screen and (max-width: 1006px) {
+      @content;
+    }
+  } @else if $point == medium-screen {
+    @media screen and (max-width: 1100px) {
+      @content;
+    }
+  }
+}

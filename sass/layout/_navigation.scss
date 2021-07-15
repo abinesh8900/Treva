@@ -7,7 +7,6 @@
 }
 .header__nav {
   padding: 25px 20px;
-  display: flex; //flex
 }
 .logo__size {
   width: 176px;
@@ -18,10 +17,8 @@
   margin-left: auto; // flex
 }
 .header__nav-item {
-  font-size: map-get($font-size, fs-18);
-  // color: $header-nav-btn;
+  font-size: font-size(fs-18);
   color: $header-nav-text;
-  // line-height: $lh-18;
   line-height: map-get($line-height, lh-18);
 
   &--active {

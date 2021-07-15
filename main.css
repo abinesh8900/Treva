@@ -160,7 +160,7 @@ hr {
   margin-right: auto; }
 
 .wrapper {
-  max-width: 1152px;
+  max-width: 1150px;
   padding: 0 20px; }
 
 .container {
@@ -181,17 +181,34 @@ hr {
   clear: both;
   display: table; }
 
+.flex {
+  display: flex; }
+
 .footer {
-  height: 100vh;
-  background-image: url(assets/img/Group420.png);
-  background-repeat: repeat-x;
-  background-position: bottom left; }
-  .footer__area {
-    display: flex; }
+  height: 600px;
+  background-image: url(assets/img/footerbg.png);
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1006px) {
+    .footer {
+      height: 700px; } }
+  @media screen and (max-width: 1006px) {
+    .footer__container {
+      flex-direction: column; } }
   .footer__logo {
     flex-basis: 325px; }
+    @media screen and (max-width: 1006px) {
+      .footer__logo {
+        flex-basis: 100px;
+        text-align: center; } }
+  @media screen and (max-width: 1006px) {
+    .footer__nav-area {
+      justify-content: space-around; } }
   .footer__nav-holder {
-    flex-basis: 200px; }
+    margin-right: 80px; }
+    @media screen and (max-width: 1006px) {
+      .footer__nav-holder {
+        margin-right: unset; } }
   .footer__nav-heading {
     font-size: 25px;
     line-height: 30px;
@@ -223,8 +240,7 @@ hr {
   background-color: #ffffff; }
 
 .header__nav {
-  padding: 25px 20px;
-  display: flex; }
+  padding: 25px 20px; }
 
 .logo__size {
   width: 176px;
@@ -246,8 +262,8 @@ hr {
     margin-left: 53px; }
 
 .hero {
-  background-image: url(../assets/img/hero.png);
-  height: 130vh;
+  background-image: url(assets/img/hero.png);
+  height: 950px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -255,10 +271,14 @@ hr {
     max-width: 798px;
     text-align: center;
     transform: translateY(50%); }
+    @media screen and (max-width: 1100px) {
+      .hero__content {
+        width: 500px; } }
   .hero__heading {
     color: #2f2d2d; }
   .hero__desc {
     margin-top: 30px;
+    color: #2f2d2d;
     font-size: 26px;
     line-height: 40px; }
   .hero__btn-holder {
@@ -279,7 +299,7 @@ hr {
     color: #4a4edd; }
 
 .hire-warp {
-  padding: 179px 0 130px 0; }
+  margin: 179px 0 130px 0; }
 
 .warp__header {
   max-width: 694px;
@@ -331,7 +351,10 @@ hr {
   background-image: url(assets/img/Group145.png);
   height: 608px;
   background-repeat: no-repeat;
-  background-position: right; }
+  background-position: bottom right; }
+  @media screen and (max-width: 1100px) {
+    .hire__bg-right {
+      height: 800px; } }
 
 .hire__card-left {
   clip-path: path("M0.0293706 21.0294C0.0131563 9.41993 9.41992 0 21.0294 0H728.117C740.782 0 750.565 11.1262 748.944 23.6867L715.555 282.518L23.6719 355.554C11.2823 356.862 0.484857 347.158 0.467457 334.699L0.0293706 21.0294Z");
@@ -353,8 +376,12 @@ hr {
   margin-top: 144px;
   background-image: url(assets/img/Group172.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: bottom left;
   height: 768px; }
+  @media screen and (max-width: 1100px) {
+    .hire__bg-left {
+      margin-top: unset;
+      height: 1200px; } }
 
 .hire__card-right {
   margin-top: 80px;
@@ -375,6 +402,9 @@ hr {
 
 .work-warp {
   margin-bottom: 287px; }
+  @media screen and (max-width: 1100px) {
+    .work-warp {
+      margin-bottom: 180px; } }
 
 .nav-item__circle-pink {
   background-color: #fb1488; }
@@ -395,7 +425,10 @@ hr {
   background-image: url(assets/img/Group163.png);
   height: 621px;
   background-repeat: no-repeat;
-  background-position: right; }
+  background-position: bottom right; }
+  @media screen and (max-width: 1100px) {
+    .work__bg-right {
+      height: 870px; } }
 
 .work__card-left {
   clip-path: path("M29.3663 425.915C30.191 437.538 40.3202 446.267 51.9369 445.366L686.38 396.176C698.207 395.259 706.927 384.736 705.631 372.945L673.617 81.5993L24.3371 1.1398C11.2134 -0.486511 -0.128856 10.276 0.807213 23.4669L29.3663 425.915Z");
@@ -412,8 +445,12 @@ hr {
   margin-top: 200px;
   background-image: url(assets/img/Group247.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: bottom left;
   height: 802px; }
+  @media screen and (max-width: 1100px) {
+    .work__bg-left {
+      height: 1200px;
+      margin-top: unset; } }
 
 .work__card-right {
   margin-top: 80px;
@@ -431,8 +468,8 @@ hr {
   text-align: center;
   margin-bottom: 108px; }
   .input-area__desc {
-    margin-top: 35px;
     max-width: 592px;
+    margin-top: 30px;
     color: #2f2d2d;
     font-size: 26px;
     line-height: 40px; }
@@ -467,6 +504,9 @@ hr {
   font-size: 26px; }
   .input-sumbit-icon {
     margin-left: 26px; }
+    @media screen and (max-width: 1100px) {
+      .input-sumbit-icon {
+        margin-left: unset; } }
 
 .horizontal-line {
   background-color: rgba(188, 208, 229, 0.496913); }

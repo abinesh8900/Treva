@@ -1,10 +1,10 @@
 .hire-warp {
-  padding: 179px 0 130px 0;
+  margin: 179px 0 130px 0;
 }
 .warp__header {
   max-width: 694px;
   text-align: center;
-  font-size: 0;
+  font-size: font-size(fs-0);
   margin-bottom: 179px;
 }
 .warp__heading {
@@ -29,7 +29,7 @@
   }
 }
 .nav-item__text {
-  font-size: map-get($font-size, fs-22);
+  font-size: font-size(fs-22);
   line-height: map-get($line-height, lh-25);
   margin: 23px;
   color: $primary-text-color;
@@ -53,8 +53,15 @@
   background-image: url(assets/img/Group145.png);
   height: 608px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
+
+  @include breakpoint(medium-screen) {
+    height: 800px;
+  }
 }
+// .hire__card-left-blur {
+//   filter: filter(blue-fliter);
+// }
 .hire__card-left {
   clip-path: path(
     "M0.0293706 21.0294C0.0131563 9.41993 9.41992 0 21.0294 0H728.117C740.782 0 750.565 11.1262 748.944 23.6867L715.555 282.518L23.6719 355.554C11.2823 356.862 0.484857 347.158 0.467457 334.699L0.0293706 21.0294Z"
@@ -71,15 +78,20 @@
 
 .card-desc {
   margin-top: 20px;
-  font-size: map-get($font-size, fs-18);
+  font-size: font-size(fs-18);
   line-height: map-get($line-height, lh-31);
 }
 .hire__bg-left {
   margin-top: 144px;
   background-image: url(assets/img/Group172.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: bottom left;
   height: 768px;
+
+  @include breakpoint(medium-screen) {
+    margin-top: unset;
+    height: 1200px;
+  }
 }
 .hire__card-right {
   margin-top: 80px;
@@ -97,11 +109,15 @@
 }
 .hire__card-right-desc {
   margin-top: 20px;
-  font-size: map-get($font-size, fs-18);
+  font-size: font-size(fs-18);
   line-height: map-get($line-height, lh-31);
 }
 .work-warp {
   margin-bottom: 287px;
+
+  @include breakpoint(medium-screen) {
+    margin-bottom: 180px;
+  }
 }
 
 .nav-item__circle-pink {
@@ -123,7 +139,11 @@
   background-image: url(assets/img/Group163.png);
   height: 621px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
+
+  @include breakpoint(medium-screen) {
+    height: 870px;
+  }
 }
 .work__card-left {
   clip-path: path(
@@ -143,8 +163,13 @@
   margin-top: 200px;
   background-image: url(assets/img/Group247.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: bottom left;
   height: 802px;
+
+  @include breakpoint(medium-screen) {
+    height: 1200px;
+    margin-top: unset;
+  }
 }
 .work__card-right {
   margin-top: 80px;
@@ -166,11 +191,8 @@
   margin-bottom: 108px;
 
   &__desc {
-    margin-top: 35px;
     max-width: 592px;
-    color: $primary-text-color;
-    font-size: map-get($font-size, fs-26);
-    line-height: map-get($line-height, lh-40);
+    @include desc();
   }
   &__holder {
     margin-top: 40px;
@@ -190,7 +212,7 @@
   width: 70%;
   height: 100%;
   background-color: transparent;
-  font-size: map-get($font-size, fs-22);
+  font-size: font-size(fs-22);
   padding-left: 20px;
 }
 .input-sumbit {
@@ -201,13 +223,15 @@
   background-color: $purple;
   border-radius: 8px;
   color: $secondary-text-color;
-  font-size: map-get($font-size, fs-26);
+  font-size: font-size(fs-26);
 
   &-icon {
     margin-left: 26px;
+    @include breakpoint(medium-screen) {
+      margin-left: unset;
+    }
   }
 }
 .horizontal-line {
   background-color: $hr-line;
 }
-// pen ten dent tend teddy precedent red under

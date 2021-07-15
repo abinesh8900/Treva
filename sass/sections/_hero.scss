@@ -1,6 +1,6 @@
 .hero {
-  background-image: url(../assets/img/hero.png);
-  height: 130vh;
+  background-image: url(assets/img/hero.png);
+  height: 950px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -9,20 +9,22 @@
     max-width: 798px;
     text-align: center;
     transform: translateY(50%);
+
+    @include breakpoint(medium-screen) {
+      width: 500px;
+    }
   }
   &__heading {
     color: $primary-text-color;
   }
   &__desc {
-    margin-top: 30px;
-    font-size: map-get($font-size, fs-26);
-    line-height: map-get($line-height, lh-40);
+    @include desc();
   }
   &__btn-holder {
     margin-top: 30px;
   }
   &__btn {
-    font-size: map-get($font-size, fs-25);
+    font-size: font-size(fs-25);
     line-height: map-get($line-height, lh-25);
     padding: 15px 0;
     width: 151px;

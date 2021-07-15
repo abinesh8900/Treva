@@ -1,0 +1,11 @@
+@function font-size($fs-value) {
+  @return map-get($font-size, $fs-value);
+}
+
+@function line-height($lh-value) {
+  @return map-get($line-height, $lh-value);
+}
+
+@function filter($filter-value) {
+  @return map-get($card-shadow, $filter-value);
+}

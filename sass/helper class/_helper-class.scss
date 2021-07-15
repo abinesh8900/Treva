@@ -3,7 +3,7 @@
   margin-right: auto;
 }
 .wrapper {
-  max-width: 1152px;
+  max-width: 1150px;
   padding: 0 20px;
 }
 .container {
@@ -23,4 +23,7 @@
   content: "";
   clear: both;
   display: table;
+}
+.flex {
+  display: flex;
 }

@@ -1,5 +1,6 @@
 // FONT SIZE
 $font-size: (
+  fs-0: 0,
   fs-18: 18px,
   fs-22: 22px,
   fs-25: 25px,
@@ -14,4 +15,12 @@ $line-height: (
   lh-31: 31px,
   lh-35: 35px,
   lh-40: 40px,
+);
+
+// BOX SHADOW
+$card-shadow: (
+  blue-fliter: drop-shadow(0 23px 14px rgba(119, 150, 254, 0.97)),
+  orange-filter: drop-shadow(0 23px 14px rgba(255, 134, 91, 1)),
+  purpel-filter: drop-shadow(0 23px 14px rgba(137, 55, 220, 1)),
+  green-filter: drop-shadow(0 23px 14px rgba(124, 202, 132, 1)),
 );
