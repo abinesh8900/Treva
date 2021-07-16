@@ -1,12 +1,16 @@
 .footer {
   height: 600px;
-  background-image: url(assets/img/footerbg.png);
+  background-image: url(assets/img/Group.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
 
   @include breakpoint(footer-container) {
     height: 500px;
+  }
+
+  @include breakpoint(small-screen) {
+    height: 590px;
   }
 
   &__container {
@@ -22,11 +26,20 @@
       flex-basis: 100px;
       text-align: center;
     }
+
+    @include breakpoint(small-screen) {
+      flex-basis: 55px;
+    }
   }
 
   &__nav-area {
     @include breakpoint(footer-container) {
       justify-content: space-around;
+    }
+
+    @include breakpoint(small-screen) {
+      flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -36,16 +49,30 @@
     @include breakpoint(footer-container) {
       margin-right: unset;
     }
+    @include breakpoint(small-screen) {
+      margin-bottom: 25px;
+    }
   }
   &__nav-heading {
     font-size: font-size(fs-25);
-    line-height: map-get($line-height, lh-30);
+    line-height: line-height(lh-31);
     margin-bottom: 35px;
     color: $primary-text-color;
+
+    @include breakpoint(small-screen) {
+      font-size: font-size(fs-22);
+      line-height: line-height(lh-25);
+      margin-bottom: 15px;
+    }
   }
   &__nav-item {
     font-size: font-size(fs-18);
-    line-height: map-get($line-height, lh-35);
+    line-height: line-height(lh-35);
+
+    @include breakpoint(small-screen) {
+      font-size: font-size(fs-14);
+      line-height: line-height(lh-25);
+    }
 
     &-link {
       color: $footer-link;
@@ -55,14 +82,26 @@
 .footer__nav-social-facebook {
   color: $facebook-blue;
   margin-right: 17px;
+
+  @include breakpoint(small-screen) {
+    margin-right: 4px;
+  }
 }
 
 .footer__nav-social-twitter {
   color: $twitter-blue;
   margin-right: 10px;
+
+  @include breakpoint(small-screen) {
+    margin-right: 4px;
+  }
 }
 
 .footer__nav-social-instagram {
   color: $instagram-pink;
   margin-right: 14px;
+
+  @include breakpoint(small-screen) {
+    margin-right: 4px;
+  }
 }
