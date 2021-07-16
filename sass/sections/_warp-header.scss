@@ -19,7 +19,7 @@
 }
 .warp__nav-item {
   font-size: 22px;
-  border-bottom: 3px solid $warp-border;
+  border-bottom: 3px solid $color-opacity-quick-silver;
   width: calc(100% / 3);
   padding: 33px 0;
   justify-content: center;
@@ -64,34 +64,40 @@
     font-size: font-size(fs-18);
   }
 }
+
 .nav-item__circle-blue {
-  background-color: $light-blue;
+  background-color: $color-opacity-cornflower-blue;
+  // @include hover();
 }
-.nav-item__text-blue {
-  color: $light-blue;
+.nav-item__text-blue:hover {
+  cursor: pointer;
+  color: $color-cornflower-blue;
+  //  @mixin hover() {
+  //     background-color: $color-cornflower-blue;
+  //   }
 }
 .nav-item__circle-red {
-  background-color: $circle-red;
+  background-color: $color-opacity-sunset-orange;
 }
 .nav-item__circle-green {
-  background-color: $circle-green;
+  background-color: $color-opacity-middle-green;
 }
-.warp__nav-item-blue {
-  border-bottom-color: $light-blue;
-}
+// .warp__nav-item-blue {
+//   border-bottom-color: $color-cornflower-blue;
+// }
 
 .nav-item__circle-pink {
-  background-color: $circle-pink;
+  background-color: $color-opacity-philippine-pink;
 }
-.nav-item__text-pink {
-  color: $circle-pink;
-}
+// .nav-item__text-pink {
+//   color: $color-philippine-pink;
+// }
 .nav-item__circle-skyblue {
-  background-color: $circle-sky-blue;
+  background-color: $color-opacity-dark-turquoise;
 }
 .nav-item__circle-purpel {
-  background-color: $circle-purpel;
+  background-color: $color-opacity-cetacean-blue;
 }
-.warp__nav-item-pink {
-  border-bottom-color: $circle-pink;
-}
+// .warp__nav-item-pink {
+//   border-bottom-color: $color-philippine-pink;
+// }

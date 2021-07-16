@@ -24,7 +24,7 @@
 .input-field__holder {
   flex-basis: 793px;
   height: 95px;
-  background-color: $input-background;
+  background-color: $color-opacity-ight-silver;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 
@@ -59,7 +59,7 @@
   outline: 0;
   font-size: font-size(fs-22);
   flex-basis: 283px;
-  background-color: $purple;
+  background-color: $color-cetacean-blue;
   color: $secondary-text-color;
   border-radius: 8px;
   cursor: pointer;
@@ -88,5 +88,5 @@
   }
 }
 .horizontal-line {
-  background-color: $hr-line;
+  background-color: $color-opacity-beau-blue;
 }

@@ -55,13 +55,13 @@
     }
   }
   &__btn-bgcolor {
-    background-color: $hero-btn;
+    background-color: $color-iris;
     color: $secondary-text-color;
     margin-right: 32px;
   }
 
   &__btn-border {
-    border: 2px solid $hero-btn;
-    color: $hero-btn;
+    border: 2px solid $color-iris;
+    color: $color-iris;
   }
 }

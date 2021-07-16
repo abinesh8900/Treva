@@ -22,7 +22,7 @@
 }
 .header__nav-item {
   font-size: font-size(fs-18);
-  color: $header-nav-text;
+  color: $color-arsenic;
   line-height: map-get($line-height, lh-18);
 
   @include breakpoint(small-screen) {
@@ -30,7 +30,7 @@
   }
 
   &--active {
-    background-color: $header-nav-btn;
+    background-color: $color-violets;
     color: $secondary-text-color;
     padding: 12px 20px 12px 22px;
     border-radius: 20px;

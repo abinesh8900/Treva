@@ -13,17 +13,17 @@
 .inline-block {
   display: inline-block;
 }
-.float-l {
-  float: left;
-}
-.float-r {
-  float: right;
-}
-.clearfix {
-  content: "";
-  clear: both;
-  display: table;
-}
+// .float-l {
+//   float: left;
+// }
+// .float-r {
+//   float: right;
+// }
+// .clearfix {
+//   content: "";
+//   clear: both;
+//   display: table;
+// }
 
 // F L E X
 .flex {
@@ -31,6 +31,9 @@
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .items-center {
   align-items: center;
