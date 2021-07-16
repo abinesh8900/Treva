@@ -14,14 +14,21 @@
 // Components
 @import "components/buttons";
 
-// Layout
-@import "layout/footer";
+// // Layout
+// @import "layout/footer";
+// @import "layout/header";
+// @import "layout/navigation";
+
+// // Sections
+// @import "sections/hero";
+// @import "sections/input-area";
+
+// // Pages
+// @import "pages/home";
+
 @import "layout/header";
 @import "layout/navigation";
-
-// Sections
 @import "sections/hero";
-@import "sections/input-area";
-
-// Pages
 @import "pages/home";
+@import "sections/input-area";
+@import "layout/footer";
