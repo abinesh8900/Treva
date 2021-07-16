@@ -24,6 +24,14 @@
   clear: both;
   display: table;
 }
+
+// F L E X
 .flex {
   display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
 }

@@ -7,7 +7,6 @@
 }
 .header__nav {
   padding: 25px 20px;
-  align-items: center;
   @include breakpoint(small-screen) {
     padding: 15px;
   }
@@ -20,9 +19,6 @@
     width: 100px;
     height: 28px;
   }
-}
-.header__nav-holder {
-  margin-left: auto; // flex
 }
 .header__nav-item {
   font-size: font-size(fs-18);

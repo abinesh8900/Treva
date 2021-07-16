@@ -8,27 +8,21 @@
 @import "core/reset";
 @import "core/typography";
 
-// Helper Class
+// Helper files
 @import "helper class/helper-class";
 
-// Components
-@import "components/buttons";
-
-// // Layout
-// @import "layout/footer";
-// @import "layout/header";
-// @import "layout/navigation";
-
-// // Sections
-// @import "sections/hero";
-// @import "sections/input-area";
-
-// // Pages
-// @import "pages/home";
-
+// Layout files
 @import "layout/header";
 @import "layout/navigation";
+
+// Section files
 @import "sections/hero";
-@import "pages/home";
+
+// Section files
+@import "sections/warp-header";
+@import "sections/hire-warp";
+@import "sections/work-warp";
 @import "sections/input-area";
+
+// Layout files
 @import "layout/footer";

@@ -12,16 +12,13 @@
   &__content {
     max-width: 798px;
     text-align: center;
-    transform: translateY(50%);
+    margin-top: 150px;
 
     @include breakpoint(medium-largre-screen) {
       width: 500px;
     }
     @include breakpoint(medium-small-screen) {
       width: 85%;
-    }
-    @include breakpoint(small-screen) {
-      transform: translateY(32%);
     }
   }
   &__heading {
