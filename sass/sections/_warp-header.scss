@@ -21,7 +21,8 @@
   font-size: 22px;
   border-bottom: 3px solid $color-opacity-quick-silver;
   width: calc(100% / 3);
-  padding: 33px 0;
+  margin-top: 33px;
+  padding-bottom: 33px;
   justify-content: center;
   align-items: center;
 
@@ -29,24 +30,29 @@
     flex-flow: column;
   }
   @include breakpoint(small-screen) {
-    padding: 0 0 15px 0;
+    padding-bottom: 15px;
   }
 }
 .nav-item__circle {
-  height: 47px;
-  width: 47px;
-  border-radius: 50px;
+  // height: 47px;
+  // width: 47px;
+  // border-radius: 50px;
 
-  @include breakpoint(small-screen) {
-    height: 42px;
-    width: 42px;
-  }
+  // @include breakpoint(small-screen) {
+  //   height: 42px;
+  //   width: 42px;
+  // }
 
   &-icon {
     padding: 14px;
+    border-radius: 50px;
+    height: 47px;
+    width: 47px;
 
     @include breakpoint(small-screen) {
       padding: 12px;
+      height: 42px;
+      width: 42px;
     }
   }
 }
@@ -67,14 +73,6 @@
 
 .nav-item__circle-blue {
   background-color: $color-opacity-cornflower-blue;
-  // @include hover();
-}
-.nav-item__text-blue:hover {
-  cursor: pointer;
-  color: $color-cornflower-blue;
-  //  @mixin hover() {
-  //     background-color: $color-cornflower-blue;
-  //   }
 }
 .nav-item__circle-red {
   background-color: $color-opacity-sunset-orange;
@@ -82,9 +80,6 @@
 .nav-item__circle-green {
   background-color: $color-opacity-middle-green;
 }
-// .warp__nav-item-blue {
-//   border-bottom-color: $color-cornflower-blue;
-// }
 
 .nav-item__circle-pink {
   background-color: $color-opacity-philippine-pink;
@@ -101,3 +96,75 @@
 // .warp__nav-item-pink {
 //   border-bottom-color: $color-philippine-pink;
 // }
+
+// class add by js
+.warp__nav-item-blue {
+  border-bottom-color: $color-cornflower-blue;
+  cursor: pointer;
+  transform: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.nav-item__text-blue {
+  color: $color-cornflower-blue;
+}
+.fill-bg-blue {
+  background-color: $color-cornflower-blue;
+}
+
+.color-white[fill] {
+  fill: #ffffff;
+}
+
+.warp__nav-item-red {
+  border-bottom-color: $color-sunset-orange;
+  cursor: pointer;
+}
+.nav-item__text-red {
+  color: $color-sunset-orange;
+}
+.fill-bg-red {
+  background-color: $color-sunset-orange;
+}
+
+.warp__nav-item-green {
+  border-bottom-color: $color-middle-green;
+  cursor: pointer;
+}
+.nav-item__text-green {
+  color: $color-middle-green;
+}
+.fill-bg-green {
+  background-color: $color-middle-green;
+}
+
+.warp__nav-item-pink {
+  border-bottom-color: $color-philippine-pink;
+  cursor: pointer;
+}
+.nav-item__text-pink {
+  color: $color-philippine-pink;
+}
+.fill-bg-pink {
+  background-color: $color-philippine-pink;
+}
+
+.warp__nav-item-skyblue {
+  border-bottom-color: $color-dark-turquoise;
+  cursor: pointer;
+}
+.nav-item__text-skyblue {
+  color: $color-dark-turquoise;
+}
+.fill-bg-skyblue {
+  background-color: $color-dark-turquoise;
+}
+
+.warp__nav-item-purpel {
+  border-bottom-color: $color-cetacean-blue;
+  cursor: pointer;
+}
+.nav-item__text-purpel {
+  color: $color-cetacean-blue;
+}
+.fill-bg-purpel {
+  background-color: $color-cetacean-blue;
+}

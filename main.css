@@ -303,7 +303,8 @@ hr {
   font-size: 22px;
   border-bottom: 3px solid rgba(164, 164, 164, 0.3);
   width: calc(100% / 3);
-  padding: 33px 0;
+  margin-top: 33px;
+  padding-bottom: 33px;
   justify-content: center;
   align-items: center; }
   @media screen and (max-width: 780px) {
@@ -311,21 +312,18 @@ hr {
       flex-flow: column; } }
   @media screen and (max-width: 500px) {
     .warp__nav-item {
-      padding: 0 0 15px 0; } }
+      padding-bottom: 15px; } }
 
-.nav-item__circle {
+.nav-item__circle-icon {
+  padding: 14px;
+  border-radius: 50px;
   height: 47px;
-  width: 47px;
-  border-radius: 50px; }
+  width: 47px; }
   @media screen and (max-width: 500px) {
-    .nav-item__circle {
+    .nav-item__circle-icon {
+      padding: 12px;
       height: 42px;
       width: 42px; } }
-  .nav-item__circle-icon {
-    padding: 14px; }
-    @media screen and (max-width: 500px) {
-      .nav-item__circle-icon {
-        padding: 12px; } }
 
 .nav-item__text {
   font-size: 22px;
@@ -343,10 +341,6 @@ hr {
 .nav-item__circle-blue {
   background-color: rgba(119, 150, 254, 0.2); }
 
-.nav-item__text-blue:hover {
-  cursor: pointer;
-  color: #7796fe; }
-
 .nav-item__circle-red {
   background-color: rgba(253, 94, 94, 0.2); }
 
@@ -361,6 +355,70 @@ hr {
 
 .nav-item__circle-purpel {
   background-color: rgba(19, 2, 66, 0.2); }
+
+.warp__nav-item-blue {
+  border-bottom-color: #7796fe;
+  cursor: pointer;
+  transform: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.nav-item__text-blue {
+  color: #7796fe; }
+
+.fill-bg-blue {
+  background-color: #7796fe; }
+
+.color-white[fill] {
+  fill: #ffffff; }
+
+.warp__nav-item-red {
+  border-bottom-color: #fd5e5e;
+  cursor: pointer; }
+
+.nav-item__text-red {
+  color: #fd5e5e; }
+
+.fill-bg-red {
+  background-color: #fd5e5e; }
+
+.warp__nav-item-green {
+  border-bottom-color: #49a652;
+  cursor: pointer; }
+
+.nav-item__text-green {
+  color: #49a652; }
+
+.fill-bg-green {
+  background-color: #49a652; }
+
+.warp__nav-item-pink {
+  border-bottom-color: #fb1488;
+  cursor: pointer; }
+
+.nav-item__text-pink {
+  color: #fb1488; }
+
+.fill-bg-pink {
+  background-color: #fb1488; }
+
+.warp__nav-item-skyblue {
+  border-bottom-color: #03d3e2;
+  cursor: pointer; }
+
+.nav-item__text-skyblue {
+  color: #03d3e2; }
+
+.fill-bg-skyblue {
+  background-color: #03d3e2; }
+
+.warp__nav-item-purpel {
+  border-bottom-color: #130242;
+  cursor: pointer; }
+
+.nav-item__text-purpel {
+  color: #130242; }
+
+.fill-bg-purpel {
+  background-color: #130242; }
 
 .hire-warp {
   padding: 179px 0 130px 0; }
