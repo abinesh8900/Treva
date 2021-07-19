@@ -1,30 +1,67 @@
 // COLORS
 $primary-text-color: #2f2d2d;
 $secondary-text-color: #ffffff;
-$color-violets: #7f83ff;
-$color-arsenic: #434343;
-$color-iris: #4a4edd;
-$color-opacity-quick-silver: rgba(164, 164, 164, 0.3);
-$color-opacity-cornflower-blue: rgba(119, 150, 254, 0.2);
-$color-cornflower-blue: #7796fe;
-$color-opacity-sunset-orange: rgba(253, 94, 94, 0.2);
-$color-sunset-orange: #fd5e5e;
-$color-opacity-middle-green: rgba(73, 166, 82, 0.2);
-$color-middle-green: #49a652;
+$color-primary-violet: #7f83ff;
+$color-secondary-black: #434343;
+$color-tertiary-violet: #4a4edd;
+$color-opacity-primary-silver: #a4a4a44d;
+$color-opacity-primary-blue: #7696fe33; // opacity 0.2
+$color-medium-opacity-primary-blue: #7696fe80; //opacity 0.5
+$color-primary-blue: #7796fe;
+$color-opacity-primary-orange: #fd5d5d33; //opacity 0.2
+$color-medium-opacity-primary-orange: #ff865b80; //opacity 0.5
+$color-primary-orange: #fd5e5e;
+$color-opacity-primary-green: #49a65233; //opacity 0.2
+$color-primary-green: #49a652;
 //conflower-blue
-$color-coral: #ff865b;
-$color-opacity-philippine-pink: rgba(251, 20, 136, 0.2);
-$color-philippine-pink: #fb1488;
-$color-opacity-dark-turquoise: rgba(3, 211, 226, 0.2);
-$color-dark-turquoise: #03d3e2;
-$color-opacity-cetacean-blue: rgba(19, 2, 66, 0.2);
+$color-secondary-orange: #ff865b;
+$color-opacity-primary-pink: #fb148833;
+$color-primary-pink: #fb1488;
+$color-opacity-primary-aqua-blue: #03d3e233;
+$color-primary-aqua-blue: #03d3e2;
+$color-opacity-primary-dark-blue: #13024233;
 //cetacean-blue
-$color-blue-violet: #8937dc;
-$color-iguana-green: #7cca84;
-$color-opacity-ight-silver: rgba(216, 216, 216, 0.4);
-$color-cetacean-blue: #130242;
-$color-opacity-beau-blue: rgba(188, 208, 229, 0.4);
-$color-pine-tree: #2f281e;
-$color-blue-yonder: #4267b2;
-$color-carmine: #df0142;
-$color-button-blue: #1da1f2;
+$color-medium-opacity-secondary-violet: #8937dc80;
+$color-secondary-violet: #8937dc;
+$color-medium-opacity-secondary-green: #7cca8480;
+$color-secondary-green: #7cca84;
+$color-opacity-secondary-silver: #d8d8d866;
+$color-primary-dark-blue: #130242;
+$color-opacity-tertiary-silver: #bcd0e566;
+$color-primary-brown: #2f281e;
+$color-secondary-blue: #4267b2;
+$color-primary-red: #df0142;
+$color-tertiary-blue: #1da1f2;
+
+// FONT SIZE
+$font-size: (
+  fs-0: 0,
+  fs-14: 14px,
+  fs-16: 16px,
+  fs-18: 18px,
+  fs-20: 20px,
+  fs-22: 22px,
+  fs-25: 25px,
+  fs-26: 26px,
+  fs-30: 30px,
+);
+
+// LINE HEIGTH
+$line-height: (
+  lh-18: 18px,
+  lh-20: 20px,
+  lh-22: 22px,
+  lh-25: 25px,
+  lh-30: 30px,
+  lh-31: 31px,
+  lh-35: 35px,
+  lh-40: 40px,
+);
+
+// BOX SHADOW
+$card-shadow: (
+  blue-fliter: drop-shadow(0 23px 14px rgba(119, 150, 254, 0.97)),
+  orange-filter: drop-shadow(0 23px 14px rgba(255, 134, 91, 1)),
+  purpel-filter: drop-shadow(0 23px 14px rgba(137, 55, 220, 1)),
+  green-filter: drop-shadow(0 23px 14px rgba(124, 202, 132, 1)),
+);

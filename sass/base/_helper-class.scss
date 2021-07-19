@@ -10,20 +10,16 @@
   max-width: 1200px;
   padding: 0 20px;
 }
+.popup-container {
+  max-width: 700px;
+  padding: 0 20px;
+}
 .inline-block {
   display: inline-block;
 }
-// .float-l {
-//   float: left;
-// }
-// .float-r {
-//   float: right;
-// }
-// .clearfix {
-//   content: "";
-//   clear: both;
-//   display: table;
-// }
+.block {
+  display: block;
+}
 
 // F L E X
 .flex {
@@ -37,4 +33,11 @@
 }
 .items-center {
   align-items: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
 }

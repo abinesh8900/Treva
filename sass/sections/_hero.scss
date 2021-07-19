@@ -55,13 +55,13 @@
     }
   }
   &__btn-bgcolor {
-    background-color: $color-iris;
+    background-color: $color-tertiary-violet;
     color: $secondary-text-color;
     margin-right: 32px;
   }
 
   &__btn-border {
-    border: 2px solid $color-iris;
-    color: $color-iris;
+    border: 2px solid $color-tertiary-violet;
+    color: $color-tertiary-violet;
   }
 }

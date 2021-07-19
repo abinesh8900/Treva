@@ -1,28 +1,19 @@
 // Abstract files
 @import "abscracts/mixins";
 @import "abscracts/variables";
-@import "abscracts/map";
 @import "abscracts/function";
 
 // Core files
-@import "core/reset";
-@import "core/typography";
-
-// Helper files
-@import "helper class/helper-class";
-
-// Layout files
-@import "layout/header";
-@import "layout/navigation";
+@import "base/reset";
+@import "base/typography";
+@import "base/helper-class";
 
 // Section files
+@import "sections/navigation";
 @import "sections/hero";
-
-// Section files
 @import "sections/warp-header";
 @import "sections/hire-warp";
 @import "sections/work-warp";
 @import "sections/input-area";
-
-// Layout files
-@import "layout/footer";
+@import "sections/footer";
+@import "sections/signup";

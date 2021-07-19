@@ -19,7 +19,7 @@
 }
 .warp__nav-item {
   font-size: 22px;
-  border-bottom: 3px solid $color-opacity-quick-silver;
+  border-bottom: 3px solid $color-opacity-primary-silver;
   width: calc(100% / 3);
   margin-top: 33px;
   padding-bottom: 33px;
@@ -34,15 +34,6 @@
   }
 }
 .nav-item__circle {
-  // height: 47px;
-  // width: 47px;
-  // border-radius: 50px;
-
-  // @include breakpoint(small-screen) {
-  //   height: 42px;
-  //   width: 42px;
-  // }
-
   &-icon {
     padding: 14px;
     border-radius: 50px;
@@ -72,99 +63,182 @@
 }
 
 .nav-item__circle-blue {
-  background-color: $color-opacity-cornflower-blue;
+  background-color: $color-opacity-primary-blue;
 }
 .nav-item__circle-red {
-  background-color: $color-opacity-sunset-orange;
+  background-color: $color-opacity-primary-orange;
 }
 .nav-item__circle-green {
-  background-color: $color-opacity-middle-green;
+  background-color: $color-opacity-primary-green;
 }
 
 .nav-item__circle-pink {
-  background-color: $color-opacity-philippine-pink;
+  background-color: $color-opacity-primary-pink;
 }
-// .nav-item__text-pink {
-//   color: $color-philippine-pink;
-// }
 .nav-item__circle-skyblue {
-  background-color: $color-opacity-dark-turquoise;
+  background-color: $color-opacity-primary-aqua-blue;
 }
 .nav-item__circle-purpel {
-  background-color: $color-opacity-cetacean-blue;
+  background-color: $color-opacity-primary-dark-blue;
 }
-// .warp__nav-item-pink {
-//   border-bottom-color: $color-philippine-pink;
-// }
 
 // class add by js
-.warp__nav-item-blue {
-  border-bottom-color: $color-cornflower-blue;
-  cursor: pointer;
-  transform: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-}
-.nav-item__text-blue {
-  color: $color-cornflower-blue;
-}
-.fill-bg-blue {
-  background-color: $color-cornflower-blue;
+// .warp__nav-item-blue {
+//   border-bottom-color: $color-primary-blue;
+//   cursor: pointer;
+// }
+// .nav-item__text-blue {
+//   color: $color-primary-blue;
+// }
+// .fill-bg-blue {
+//   background-color: $color-primary-blue;
+// }
+
+// .color-white[fill] {
+//   fill: #ffffff;
+// }
+
+// .warp__nav-item-red {
+//   border-bottom-color: $color-primary-orange;
+//   cursor: pointer;
+// }
+// .nav-item__text-red {
+//   color: $color-primary-orange;
+// }
+// .fill-bg-red {
+//   background-color: $color-primary-orange;
+// }
+
+// .warp__nav-item-green {
+//   border-bottom-color: $color-primary-green;
+//   cursor: pointer;
+// }
+// .nav-item__text-green {
+//   color: $color-primary-green;
+// }
+// .fill-bg-green {
+//   background-color: $color-primary-green;
+// }
+
+// .warp__nav-item-pink {
+//   border-bottom-color: $color-primary-pink;
+//   cursor: pointer;
+// }
+// .nav-item__text-pink {
+//   color: $color-primary-pink;
+// }
+// .fill-bg-pink {
+//   background-color: $color-primary-pink;
+// }
+
+// .warp__nav-item-skyblue {
+//   border-bottom-color: $color-primary-aqua-blue;
+//   cursor: pointer;
+// }
+// .nav-item__text-skyblue {
+//   color: $color-primary-aqua-blue;
+// }
+// .fill-bg-skyblue {
+//   background-color: $color-primary-aqua-blue;
+// }
+
+// .warp__nav-item-purpel {
+//   border-bottom-color: $color-primary-dark-blue;
+//   cursor: pointer;
+// }
+// .nav-item__text-purpel {
+//   color: $color-primary-dark-blue;
+// }
+// .fill-bg-purpel {
+//   background-color: $color-primary-dark-blue;
+// }
+
+.hover-blue:hover {
+  border-bottom-color: $color-primary-blue;
+  @include cursor-pointer();
+
+  & > .nav-item__circle-blue {
+    background-color: $color-primary-blue;
+  }
+  & > .text-blue {
+    color: $color-primary-blue;
+  }
+  & .hire__edit-icon[fill] {
+    @include fill-icon();
+  }
 }
 
-.color-white[fill] {
-  fill: #ffffff;
+.hover-red:hover {
+  border-bottom-color: $color-primary-orange;
+  @include cursor-pointer();
+
+  & > .nav-item__circle-red {
+    background-color: $color-primary-orange;
+  }
+  & > .text-red {
+    color: $color-primary-orange;
+  }
+  & .hire__done-icon[fill] {
+    @include fill-icon();
+  }
 }
 
-.warp__nav-item-red {
-  border-bottom-color: $color-sunset-orange;
-  cursor: pointer;
-}
-.nav-item__text-red {
-  color: $color-sunset-orange;
-}
-.fill-bg-red {
-  background-color: $color-sunset-orange;
+.hover-green:hover {
+  border-bottom-color: $color-primary-green;
+  @include cursor-pointer();
+
+  & > .nav-item__circle-green {
+    background-color: $color-primary-green;
+  }
+  & > .text-green {
+    color: $color-primary-green;
+  }
+  & .hire__people-icon[fill] {
+    @include fill-icon();
+  }
 }
 
-.warp__nav-item-green {
-  border-bottom-color: $color-middle-green;
-  cursor: pointer;
-}
-.nav-item__text-green {
-  color: $color-middle-green;
-}
-.fill-bg-green {
-  background-color: $color-middle-green;
+.hover-pink:hover {
+  border-bottom-color: $color-primary-pink;
+  @include cursor-pointer();
+
+  & > .nav-item__circle-pink {
+    background-color: $color-primary-pink;
+  }
+  & > .text-pink {
+    color: $color-primary-pink;
+  }
+  & .work__job-icon[fill] {
+    @include fill-icon();
+  }
 }
 
-.warp__nav-item-pink {
-  border-bottom-color: $color-philippine-pink;
-  cursor: pointer;
-}
-.nav-item__text-pink {
-  color: $color-philippine-pink;
-}
-.fill-bg-pink {
-  background-color: $color-philippine-pink;
+.hover-skyblue:hover {
+  border-bottom-color: $color-primary-aqua-blue;
+  @include cursor-pointer();
+
+  & > .nav-item__circle-skyblue {
+    background-color: $color-primary-aqua-blue;
+  }
+  & > .text-skyblue {
+    color: $color-primary-aqua-blue;
+  }
+  & .work__done-icon[fill] {
+    @include fill-icon();
+  }
 }
 
-.warp__nav-item-skyblue {
-  border-bottom-color: $color-dark-turquoise;
-  cursor: pointer;
-}
-.nav-item__text-skyblue {
-  color: $color-dark-turquoise;
-}
-.fill-bg-skyblue {
-  background-color: $color-dark-turquoise;
-}
+.hover-purpel:hover {
+  border-bottom-color: $color-primary-dark-blue;
+  @include cursor-pointer();
 
-.warp__nav-item-purpel {
-  border-bottom-color: $color-cetacean-blue;
-  cursor: pointer;
-}
-.nav-item__text-purpel {
-  color: $color-cetacean-blue;
-}
-.fill-bg-purpel {
-  background-color: $color-cetacean-blue;
+  & > .nav-item__circle-purpel {
+    background-color: $color-primary-dark-blue;
+  }
+  & > .text-purpel {
+    color: $color-primary-dark-blue;
+  }
+  & .work__people-icon[fill] {
+    @include fill-icon();
+  }
 }

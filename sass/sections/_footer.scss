@@ -75,12 +75,12 @@
     }
 
     &-link {
-      color: $color-pine-tree;
+      color: $color-primary-brown;
     }
   }
 }
 .footer__nav-social-facebook {
-  color: $color-blue-yonder;
+  color: $color-secondary-blue;
   margin-right: 17px;
 
   @include breakpoint(small-screen) {
@@ -89,7 +89,7 @@
 }
 
 .footer__nav-social-twitter {
-  color: $color-button-blue;
+  color: $color-tertiary-blue;
   margin-right: 10px;
 
   @include breakpoint(small-screen) {
@@ -98,7 +98,7 @@
 }
 
 .footer__nav-social-instagram {
-  color: $color-carmine;
+  color: $color-primary-red;
   margin-right: 14px;
 
   @include breakpoint(small-screen) {

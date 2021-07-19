@@ -23,14 +23,12 @@
     background-size: 310px;
   }
 }
-// .hire__card-left-blur {
-//   filter: filter(blue-fliter);
-// }
+
 .hire__card-left {
   clip-path: path(
     "M0.0293706 21.0294C0.0131563 9.41993 9.41992 0 21.0294 0H728.117C740.782 0 750.565 11.1262 748.944 23.6867L715.555 282.518L23.6719 355.554C11.2823 356.862 0.484857 347.158 0.467457 334.699L0.0293706 21.0294Z"
   );
-  background-color: $color-cornflower-blue;
+  background-color: $color-primary-blue;
   padding: 49px 0 98px 56px;
   width: 750px;
   height: 356px;
@@ -103,7 +101,7 @@
   clip-path: path(
     "M78 93.165L681.968 0.532488C694.08 -1.32522 705 8.04735 705 20.3013V503C705 514.046 696.046 523 685 523H20.1761C7.62763 523 -1.82108 511.578 0.530394 499.252L78 93.165Z"
   );
-  background-color: $color-coral;
+  background-color: $color-secondary-orange;
   padding: 153px 0 87px 122px;
   width: 709px;
   height: 523px;
@@ -133,5 +131,11 @@
 .hire__card-right-desc {
   margin-top: 20px;
   font-size: font-size(fs-18);
-  line-height: map-get($line-height, lh-31);
+  line-height: line-height(lh-31);
+}
+.shadow-blue {
+  filter: drop-shadow(3px 24px 21px $color-medium-opacity-primary-blue);
+}
+.shadow-orange {
+  filter: drop-shadow(15px 19px 21px $color-medium-opacity-primary-orange);
 }

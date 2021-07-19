@@ -11,6 +11,15 @@
   }
 }
 
+@mixin fill-icon {
+  fill: $secondary-text-color;
+  cursor: pointer;
+}
+
+@mixin cursor-pointer {
+  cursor: pointer;
+}
+
 // BREAK POINTS
 
 @mixin breakpoint($point) {
