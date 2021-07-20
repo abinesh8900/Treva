@@ -14,7 +14,7 @@
     <title>Treva</title>
   </head>
   <body>
-    <header class="top__header">
+    <header class="top__header make-blur">
       <nav
         class="
           horizontal-align
@@ -29,19 +29,126 @@
           <img class="logo__size" src="assets/img/treva.png" alt="logo" />
         </a>
         <div class="header__nav-holder">
-          <a class="header__nav-item inline-block" href="javascript:void(0)"
-            >Sign In</a
-          >
-          <a
-            class="header__nav-item header__nav-item--active inline-block"
-            href="javascript:void(0)"
-          >
+          <button class="secondary-btn">Sign In</button>
+          <button class="header__item-last primary-btn" id="signup-btn">
             Sign Up
-          </a>
+          </button>
         </div>
       </nav>
     </header>
-    <main>
+    <section
+      class="signup-container popup-container horizontal-align hidden"
+      id="signup-popup"
+    >
+      <div class="signup-area">
+        <h2 class="signup__heading">SIGN UP</h2>
+        <form action="" method="GET" class="signup-warp">
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="fullname"
+              >Full Name</label
+            >
+            <input
+              class="signup__input-area"
+              type="text"
+              name="fullname"
+              id="fullname"
+              required
+            />
+          </div>
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="username"
+              >User Name</label
+            >
+            <input
+              class="signup__input-area"
+              type="text"
+              name="username"
+              id="username"
+              required
+            />
+          </div>
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="email">Email</label>
+            <input
+              class="signup__input-area"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="phone">Phone</label>
+            <input
+              class="signup__input-area"
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+            />
+          </div>
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="password"
+              >Password</label
+            >
+            <input
+              class="signup__input-area"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="mt-30 signup__input-holder inline-block">
+            <label class="signup__input-field block" for="confrim-password">
+              Confrim Password
+            </label>
+            <input
+              class="signup__input-area"
+              type="password"
+              name="confrim-password"
+              id="confrim-password"
+              required
+            />
+          </div>
+          <div class="mt-40 signup__terms-condiction">
+            <input
+              type="checkbox"
+              name="terms-conditions"
+              id="terms-conditions"
+              required
+            />
+            <label for="terms-conditions">
+              I agree with all
+              <a class="terms-conditions__color" href="javascript:void(0)"
+                >Terms and Conditions</a
+              >
+              and
+              <a class="terms-conditions__color" href="javascript:void(0)"
+                >Privacy Policies</a
+              >
+            </label>
+          </div>
+          <div class="my-40 signup-btn__holder">
+            <button class="secondary-btn" type="reset">Cancel</button>
+            <button class="primary-btn ml-30" type="submit">Sign Up</button>
+          </div>
+        </form>
+        <hr class="horizontal-line" />
+        <div class="signup__foot-decs">
+          <span>Already have account</span>
+          <button class="secondary-btn" type="button">Sign In</button>
+        </div>
+        <button
+          type="button"
+          class="secondary-btn signup-close"
+          id="signup-close"
+        >
+          <span class="fas fa-times"></span>
+        </button>
+      </div>
+    </section>
+    <main class="make-blur">
       <section class="hero">
         <article class="hero__content horizontal-align">
           <h1 class="hero__heading">Find Your Dream Job Here</h1>
@@ -63,98 +170,6 @@
             >
           </div>
         </article>
-      </section>
-      <section class="popup-container horizontal-align">
-        <div class="signup-area">
-          <h2 class="signup__heading">SIGN UP</h2>
-          <form action="" method="GET" class="signup-warp">
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="fullname"
-                >Full Name</label
-              >
-              <input
-                class="signup__input-area"
-                type="text"
-                name="fullname"
-                id="fullname"
-                required
-              />
-            </div>
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="username"
-                >User Name</label
-              >
-              <input
-                class="signup__input-area"
-                type="text"
-                name="username"
-                id="username"
-                required
-              />
-            </div>
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="email">Email</label>
-              <input
-                class="signup__input-area"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-            </div>
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="phone">Phone</label>
-              <input
-                class="signup__input-area"
-                type="tel"
-                name="phone"
-                id="phone"
-                required
-              />
-            </div>
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="password"
-                >Password</label
-              >
-              <input
-                class="signup__input-area"
-                type="password"
-                name="password"
-                id="password"
-                required
-              />
-            </div>
-            <div class="mt-30 signup__input-holder">
-              <label class="signup__input-field block" for="confrim-password">
-                Confrim Password
-              </label>
-              <input
-                class="signup__input-area"
-                type="password"
-                name="confrim-password"
-                id="confrim-password"
-                required
-              />
-            </div>
-            <div class="mt-40 signup__termsnandcondiction">
-              <input
-                type="checkbox"
-                name="terms-conditions"
-                id="terms-conditions"
-              />
-              <label for="terms-conditions">
-                I agree with all
-                <a href="javascript:void(0)">Terms and Conditions</a> and
-                <a href="javascript:void(0)">Privacy Policies</a>
-              </label>
-            </div>
-            <div class="mt-40"><button type="submit">Sign Up</button></div>
-          </form>
-          <div>
-            <span>Already have account</span>
-            <button type="button">Sign In</button>
-          </div>
-        </div>
       </section>
       <section class="hire-warp">
         <div class="warp__header container horizontal-align">
@@ -407,7 +422,7 @@
         <hr class="horizontal-line" />
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer make-blur">
       <div class="container horizontal-align footer__container flex">
         <figure class="footer__logo inline-block">
           <a href="javascript:void(0)" class="logo logo__size">
@@ -489,6 +504,7 @@
         </nav>
       </div>
     </footer>
-    <!-- <script src="script.js"></script> -->
+    <div class="overlay hidden" id="overlay"></div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,22 @@
+.secondary-btn {
+  @include button();
+  color: $color-secondary-black;
+  background-color: transparent;
+
+  @include breakpoint(small-screen) {
+    font-size: font-size(fs-16);
+  }
+}
+
+.primary-btn {
+  @include button();
+  background-color: $color-primary-violet;
+  color: $secondary-text-color;
+  padding: 12px 20px 12px 22px;
+  border-radius: 20px;
+
+  @include breakpoint(small-screen) {
+    margin-left: 20px;
+    padding: 10px 15px;
+  }
+}

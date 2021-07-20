@@ -20,25 +20,10 @@
     height: 28px;
   }
 }
-.header__nav-item {
-  font-size: font-size(fs-18);
-  color: $color-secondary-black;
-  line-height: map-get($line-height, lh-18);
+.header__item-last {
+  margin-left: 53px;
 
   @include breakpoint(small-screen) {
-    font-size: font-size(fs-16);
-  }
-
-  &--active {
-    background-color: $color-primary-violet;
-    color: $secondary-text-color;
-    padding: 12px 20px 12px 22px;
-    border-radius: 20px;
-    margin-left: 53px;
-
-    @include breakpoint(small-screen) {
-      margin-left: 20px;
-      padding: 10px 15px;
-    }
+    margin-left: 20px;
   }
 }
