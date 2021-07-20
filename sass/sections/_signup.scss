@@ -39,20 +39,46 @@
 .signup__input-holder {
   width: calc(100% / 2);
   padding: 0 20px;
+  font-size: font-size(fs-14);
+  position: relative;
 
   @include breakpoint(medium-small-screen) {
     width: 100%;
     padding: 0;
     margin-top: 25px;
   }
+  & > span {
+    visibility: hidden;
+    position: absolute;
+    right: 25px;
+    bottom: 22px;
+  }
+  &.success input {
+    border-color: $color-primary-green;
+  }
+  &.success .success-icon {
+    color: $color-primary-green;
+    visibility: visible;
+  }
+  &.error input {
+    border-color: $color-primary-red;
+  }
+  &.error .error-icon {
+    color: $color-primary-red;
+    visibility: visible;
+  }
+  &.error .er-msg {
+    visibility: visible;
+  }
+}
 
-  //   & :focus-within .signup__input-area {
-  //     border-bottom: 1px solid rgb(255, 0, 234);
-  //   }
+.er-msg {
+  visibility: hidden;
+  padding-top: 5px;
+  color: $color-primary-red;
 }
 .signup__input-field {
   font-size: font-size(fs-20);
-  // color: $primary-text-color;
 }
 .signup__input-area {
   padding-top: 10px;
@@ -61,10 +87,10 @@
   border: 0;
   outline: 0;
   border-bottom: 1.5px solid $color-opacity-primary-silver;
-  font-size: font-size(fs-20);
+  font-size: font-size(fs-16);
 
   @include breakpoint(small-screen) {
-    font-size: font-size(fs-18);
+    font-size: font-size(fs-12);
   }
 
   &:focus-within {

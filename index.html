@@ -42,8 +42,8 @@
     >
       <div class="signup-area">
         <h2 class="signup__heading">SIGN UP</h2>
-        <form action="" method="GET" class="signup-warp">
-          <div class="mt-30 signup__input-holder inline-block">
+        <form action="" method="GET" class="signup-warp" id="signup-form">
+          <div class="mt-30 signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="fullname"
               >Full Name</label
             >
@@ -52,10 +52,12 @@
               type="text"
               name="fullname"
               id="fullname"
-              required
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block">
+          <div class="mt-30 signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="username"
               >User Name</label
             >
@@ -64,59 +66,68 @@
               type="text"
               name="username"
               id="username"
-              required
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block">
+          <div class="mt-30 signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="email">Email</label>
             <input
               class="signup__input-area"
               type="email"
               name="email"
               id="email"
-              required
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block">
+          <div class="mt-30 signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="phone">Phone</label>
             <input
               class="signup__input-area"
               type="tel"
               name="phone"
               id="phone"
-              required
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block">
-            <label class="signup__input-field block" for="password"
-              >Password</label
-            >
+          <div class="mt-30 signup__input-holder inline-block field-control">
+            <label class="signup__input-field block" for="password">
+              Password
+            </label>
             <input
               class="signup__input-area"
               type="password"
               name="password"
               id="password"
-              required
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block">
-            <label class="signup__input-field block" for="confrim-password">
+          <div class="mt-30 signup__input-holder inline-block field-control">
+            <label class="signup__input-field block" for="confrimPassword">
               Confrim Password
             </label>
             <input
               class="signup__input-area"
               type="password"
-              name="confrim-password"
-              id="confrim-password"
-              required
+              name="confrimPassword"
+              id="confrimPassword"
             />
+            <span class="fas fa-check success-icon"></span
+            ><span class="fas fa-exclamation error-icon"></span>
+            <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-40 signup__terms-condiction">
+          <div class="mt-40 signup__terms-condiction field-control">
             <input
               type="checkbox"
               name="terms-conditions"
               id="terms-conditions"
-              required
             />
             <label for="terms-conditions">
               I agree with all
@@ -130,7 +141,9 @@
             </label>
           </div>
           <div class="my-40 signup-btn__holder">
-            <button class="secondary-btn" type="reset">Cancel</button>
+            <button class="secondary-btn" type="reset" id="signupCancel">
+              Cancel
+            </button>
             <button class="primary-btn ml-30" type="submit">Sign Up</button>
           </div>
         </form>
