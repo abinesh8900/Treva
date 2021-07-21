@@ -873,7 +873,7 @@ hr {
 .signup-warp {
   margin-top: 50px;
   font-size: 0; }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 886px) {
     .signup-warp {
       margin-top: 30px; } }
 
@@ -882,7 +882,7 @@ hr {
   padding: 0 20px;
   font-size: 14px;
   position: relative; }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 886px) {
     .signup__input-holder {
       width: 100%;
       padding: 0;
@@ -892,18 +892,23 @@ hr {
     position: absolute;
     right: 25px;
     bottom: 22px; }
-  .signup__input-holder.success input {
-    border-color: #49a652; }
-  .signup__input-holder.success .success-icon {
-    color: #49a652;
-    visibility: visible; }
-  .signup__input-holder.error input {
-    border-color: #df0142; }
-  .signup__input-holder.error .error-icon {
-    color: #df0142;
-    visibility: visible; }
-  .signup__input-holder.error .er-msg {
-    visibility: visible; }
+
+.success input {
+  border-color: #49a652; }
+
+.success .success-icon {
+  color: #49a652;
+  visibility: visible; }
+
+.error input {
+  border-color: #df0142; }
+
+.error .error-icon {
+  color: #df0142;
+  visibility: visible; }
+
+.error .er-msg {
+  visibility: visible; }
 
 .er-msg {
   visibility: hidden;
@@ -927,7 +932,7 @@ hr {
 .signup__terms-condiction {
   font-size: 14px;
   padding-left: 20px; }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 886px) {
     .signup__terms-condiction {
       padding: 0; } }
 

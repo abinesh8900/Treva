@@ -38,6 +38,10 @@
     @media screen and (max-width: 1100px) {
       @content;
     }
+  } @else if $point == signup-medium-small-screen {
+    @media screen and (max-width: 886px) {
+      @content;
+    }
   } @else if $point == medium-small-screen {
     @media screen and (max-width: 780px) {
       @content;
