@@ -43,7 +43,7 @@
       <div class="signup-area">
         <h2 class="signup__heading">SIGN UP</h2>
         <form action="" method="GET" class="signup-warp" id="signup-form">
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="fullname"
               >Full Name</label
             >
@@ -52,12 +52,13 @@
               type="text"
               name="fullname"
               id="fullname"
+              onkeyup="checkFullName()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="username"
               >User Name</label
             >
@@ -66,36 +67,39 @@
               type="text"
               name="username"
               id="username"
+              onkeyup="checkUserName()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="email">Email</label>
             <input
               class="signup__input-area"
               type="email"
               name="email"
               id="email"
+              onkeyup="checkEmail()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="phone">Phone</label>
             <input
               class="signup__input-area"
               type="tel"
               name="phone"
               id="phone"
+              onkeyup="checkPhone()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="password">
               Password
             </label>
@@ -104,12 +108,13 @@
               type="password"
               name="password"
               id="password"
+              onkeyup="checkPassword()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-30 signup__input-holder inline-block field-control">
+          <div class="signup__input-holder inline-block field-control">
             <label class="signup__input-field block" for="confrimPassword">
               Confrim Password
             </label>
@@ -118,16 +123,18 @@
               type="password"
               name="confrimPassword"
               id="confrimPassword"
+              onkeyup="checkConfrimPassword()"
             />
             <span class="fas fa-check success-icon"></span
             ><span class="fas fa-exclamation error-icon"></span>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="mt-40 signup__terms-condiction field-control">
+          <div class="signup__terms-condiction field-control">
             <input
               type="checkbox"
               name="terms-conditions"
               id="terms-conditions"
+              onchange="checkTandC()"
             />
             <label for="terms-conditions">
               I agree with all
@@ -141,25 +148,38 @@
             </label>
             <p class="er-msg">Error message</p>
           </div>
-          <div class="my-40 signup-btn__holder">
+          <div class="signup-btn__holder">
             <button class="secondary-btn" type="reset" id="signupCancel">
               Cancel
             </button>
-            <button class="primary-btn ml-30" type="submit">Sign Up</button>
+            <button
+              class="primary-btn disable-btn form__submit-btn"
+              type="submit"
+              id="signUp"
+            >
+              Sign Up
+            </button>
           </div>
+          <button
+            type="reset"
+            class="secondary-btn signup-close"
+            id="signup-close"
+          >
+            <span class="fas fa-times"></span>
+          </button>
         </form>
         <hr class="horizontal-line" />
         <div class="signup__foot-decs">
           <span>Already have account</span>
           <button class="secondary-btn" type="button">Sign In</button>
         </div>
-        <button
+        <!-- <button
           type="button"
           class="secondary-btn signup-close"
           id="signup-close"
         >
           <span class="fas fa-times"></span>
-        </button>
+        </button> -->
       </div>
     </section>
     <main class="make-blur">
